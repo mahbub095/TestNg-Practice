@@ -1,17 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-21T02:27:52 BDT" name="Suite" finished-at="2020-02-21T02:27:52 BDT" duration-ms="134">
+  <suite started-at="2020-02-21T12:36:05 BDT" name="Default suite" finished-at="2020-02-21T12:38:06 BDT" duration-ms="120289">
     <groups>
+      <group name="Link Test">
+        <method signature="GoogleTest.mailLinkTest()[pri:2, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" name="mailLinkTest" class="com.java.testing.youtube.GoogleTest"/>
+      </group> <!-- Link Test -->
+      <group name="Test">
+        <method signature="GoogleTest.test1()[pri:4, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" name="test1" class="com.java.testing.youtube.GoogleTest"/>
+        <method signature="GoogleTest.test2()[pri:5, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" name="test2" class="com.java.testing.youtube.GoogleTest"/>
+        <method signature="GoogleTest.test3()[pri:6, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" name="test3" class="com.java.testing.youtube.GoogleTest"/>
+      </group> <!-- Test -->
+      <group name="Title">
+        <method signature="GoogleTest.googleTitleTest()[pri:1, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" name="googleTitleTest" class="com.java.testing.youtube.GoogleTest"/>
+      </group> <!-- Title -->
+      <group name="Logo">
+        <method signature="GoogleTest.googleLogoTest()[pri:3, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" name="googleLogoTest" class="com.java.testing.youtube.GoogleTest"/>
+      </group> <!-- Logo -->
     </groups>
-    <test started-at="2020-02-21T02:27:52 BDT" name="Test" finished-at="2020-02-21T02:27:52 BDT" duration-ms="134">
-      <class name="com.java.testing.youtube.understandtestng">
-        <test-method signature="testng()[pri:0, instance:com.java.testing.youtube.understandtestng@58a9760d]" started-at="2020-02-21T02:27:52 BDT" name="testng" finished-at="2020-02-21T02:27:52 BDT" duration-ms="47" status="PASS">
+    <test started-at="2020-02-21T12:36:05 BDT" name="Default test" finished-at="2020-02-21T12:38:06 BDT" duration-ms="120289">
+      <class name="com.java.testing.youtube.GoogleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:36:05 BDT" name="setUp" finished-at="2020-02-21T12:36:19 BDT" duration-ms="13589" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testng -->
-      </class> <!-- com.java.testing.youtube.understandtestng -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- setUp -->
+        <test-method signature="googleTitleTest()[pri:1, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:36:19 BDT" name="googleTitleTest" finished-at="2020-02-21T12:36:19 BDT" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:36:19 BDT" name="tearDown" finished-at="2020-02-21T12:36:20 BDT" duration-ms="1077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:36:20 BDT" name="setUp" finished-at="2020-02-21T12:36:33 BDT" duration-ms="12767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="mailLinkTest()[pri:2, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:36:33 BDT" name="mailLinkTest" finished-at="2020-02-21T12:37:03 BDT" duration-ms="30310" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"GMAIL"}
+  (Session info: chrome=80.0.3987.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-LDTN898', ip: '192.168.31.248', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Mahbub\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9fac0b78a64f0e659d97332e452d77fd
+*** Element info: {Using=link text, value=GMAIL}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"GMAIL"}
+  (Session info: chrome=80.0.3987.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-LDTN898', ip: '192.168.31.248', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Mahbub\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9fac0b78a64f0e659d97332e452d77fd
+*** Element info: {Using=link text, value=GMAIL}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.java.testing.youtube.GoogleTest.mailLinkTest(GoogleTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mailLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:03 BDT" name="tearDown" finished-at="2020-02-21T12:37:04 BDT" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:04 BDT" name="setUp" finished-at="2020-02-21T12:37:19 BDT" duration-ms="14464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="googleLogoTest()[pri:3, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:19 BDT" name="googleLogoTest" finished-at="2020-02-21T12:37:19 BDT" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleLogoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:19 BDT" name="tearDown" finished-at="2020-02-21T12:37:20 BDT" duration-ms="942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:20 BDT" name="setUp" finished-at="2020-02-21T12:37:33 BDT" duration-ms="13103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test1()[pri:4, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:33 BDT" name="test1" finished-at="2020-02-21T12:37:33 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:33 BDT" name="tearDown" finished-at="2020-02-21T12:37:35 BDT" duration-ms="1860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:35 BDT" name="setUp" finished-at="2020-02-21T12:37:49 BDT" duration-ms="14670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test2()[pri:5, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:49 BDT" name="test2" finished-at="2020-02-21T12:37:49 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:49 BDT" name="tearDown" finished-at="2020-02-21T12:37:51 BDT" duration-ms="2157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:37:51 BDT" name="setUp" finished-at="2020-02-21T12:38:05 BDT" duration-ms="13196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test3()[pri:6, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:38:05 BDT" name="test3" finished-at="2020-02-21T12:38:05 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.testing.youtube.GoogleTest@10aa41f2]" started-at="2020-02-21T12:38:05 BDT" name="tearDown" finished-at="2020-02-21T12:38:06 BDT" duration-ms="1038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.java.testing.youtube.GoogleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

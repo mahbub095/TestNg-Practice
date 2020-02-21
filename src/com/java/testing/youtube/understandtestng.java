@@ -6,7 +6,7 @@ public class understandtestng {
 
  
 	
-	@Test
+    @Test
 	public void testng() {
 		System.out.println("Understanding testng.xml File");
 	}

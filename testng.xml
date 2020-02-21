@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.java.testing.youtube.TestNgBasics"/>
       <class name="com.java.testing.youtube.understandtestng"/>
     </classes>
   </test> <!-- Test -->
