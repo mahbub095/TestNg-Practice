@@ -10,8 +10,9 @@ public class DataDrivenTest {
 	
 	public static void main(String[] args) {
 		
-		Xls_Reader reader = new Xls_Reader("E:\\Automation\\TestNg\\src\\com\\testdata\\HalfEbayTestData.xlsx");
-	 
+		//Xls_Reader reader = new Xls_Reader("E:\\Automation\\TestNg\\src\\com\\testdata\\HalfEbayTestData.xlsx");
+		 
+		Xls_Reader reader = new Xls_Reader("/Users/naveenkhunteta/Documents/workspace/MorningSessions/src/com/testdata/HalfEbayTestData.xlsx");
 		
 		String firstName = reader.getCellData("RegTestData", "firstname", 2);
 		System.out.println(firstName);
@@ -42,8 +43,6 @@ public class DataDrivenTest {
 		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();	
 		driver.get("https://scgi.half.ebay.com/ws/eBayISAPI.dll?RegisterEnterInfo&usage=2943&ru=");
-	
-		
 	 
 				driver.findElement(By.xpath("//*[@id='firstname']")).sendKeys(firstName);
 				
