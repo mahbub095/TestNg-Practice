@@ -5,6 +5,8 @@
     <classes>
       <class name="com.java.testing.youtube.TestNgBasics"/>
       <class name="com.java.testing.youtube.understandtestng"/>
+      <class name="com.datadriven.test"/>
+      <class name="testNG"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
