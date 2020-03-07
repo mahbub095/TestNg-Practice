@@ -7,9 +7,8 @@
         <methods>
           <include name="setUp"/>
           <include name="userSignOut"/>
-          <include name="tearDown"/>
-          <include name="userSearch"/>
           <include name="signIn"/>
+          <include name="Logout"/>
         </methods>
       </class> <!-- testNG.HRM -->
     </classes>

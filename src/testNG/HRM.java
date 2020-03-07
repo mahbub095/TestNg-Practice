@@ -7,7 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
  
 
@@ -15,19 +18,17 @@ public class HRM {
 	
 	
 WebDriver driver;
-	
-	@BeforeMethod
+@BeforeSuite
 	public void setUp ()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rex Allen Jones II\\Downloads\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
 		driver = new ChromeDriver ();
 		driver.manage().window().maximize();
-		
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		System.out.println("1. Open Chrome & Application");
 	}
 	
-	@Test
+@BeforeTest
 	public void signIn ()
 	{		
 		WebElement textUsername = driver.findElement(By.id("txtUsername"));
@@ -45,7 +46,7 @@ WebDriver driver;
 		System.out.println("2. Sign In");
 	}
 	
-	@Test
+@BeforeClass
 	public void userSearch ()
 	{		
         WebElement menuAdmin = driver.findElement(By.id("menu_admin_viewAdminModule"));
@@ -54,7 +55,7 @@ WebDriver driver;
     
         WebElement textUserName = driver.findElement(By.id("searchSystemUser_userName"));
     
-        textUserName.sendKeys("Admin");
+        textUserName.sendKeys("john.smith");
     
         WebElement buttonSearch = driver.findElement(By.id("searchBtn"));
  
@@ -63,24 +64,33 @@ WebDriver driver;
         System.out.println("3. Search For User");
 	}
 	
-	@Test
+	 
+	
+@BeforeMethod
 	public void userSignOut () 
 	{
         WebElement linkWelcome = driver.findElement(By.id("welcome"));
       
         linkWelcome.click();
     
-        WebElement linkLogout = driver.findElement(By.xpath("//div[@id='welcome-menu']/descendant::a[contains(@href,'logout')]"));
+       // WebElement linkLogout = driver.findElement(By.linkText("Logout"));    
+       // driver.findElement(By.linkText("Logout")).click();
       
-        linkLogout.click();
     
-        System.out.println("4. Sign Out");
+         
 	}
 	
-	@AfterMethod
-	public void tearDown ()
-	{
-		System.out.println("5. Close Chrome & Application");
-		driver.quit();		
-	}
+	
+      @Test
+	  public void Logout() 
+	  {
+	 driver.findElement(By.linkText("Logout")).click();
+	  }
+	
+	
+	  @AfterMethod 
+	  public void tearDown () {
+	  System.out.println("5. Close Chrome & Application"); 
+	  driver.quit(); }
+	 
 }
