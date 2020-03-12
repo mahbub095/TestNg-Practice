@@ -84,7 +84,7 @@ WebDriver driver;
       @Test
 	  public void Logout() 
 	  {
-	 driver.findElement(By.linkText("Logout")).click();
+	     driver.findElement(By.linkText("Logout")).click();
 	  }
 	
 	

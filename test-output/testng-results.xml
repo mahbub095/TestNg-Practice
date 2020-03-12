@@ -2,36 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-07T12:29:42 BDT" name="Default suite" finished-at="2020-03-07T12:29:59 BDT" duration-ms="16087">
+  <suite started-at="2020-03-12T20:49:16 BDT" name="Default suite" finished-at="2020-03-12T20:49:38 BDT" duration-ms="21147">
     <groups>
     </groups>
-    <test started-at="2020-03-07T12:29:42 BDT" name="Default test" finished-at="2020-03-07T12:29:59 BDT" duration-ms="16087">
-      <class name="testNG.HRM">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testNG.HRM@672872e1]" started-at="2020-03-07T12:29:19 BDT" name="setUp" finished-at="2020-03-07T12:29:42 BDT" duration-ms="23294" status="PASS">
+    <test started-at="2020-03-12T20:49:16 BDT" name="Default test" finished-at="2020-03-12T20:49:38 BDT" duration-ms="21147">
+      <class name="com.java.testing.youtube.TestProject">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:com.java.testing.youtube.TestProject@76ed1b7c]" started-at="2020-03-12T20:48:50 BDT" name="invokeBrowser" finished-at="2020-03-12T20:49:16 BDT" duration-ms="26318" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="signIn()[pri:0, instance:testNG.HRM@672872e1]" started-at="2020-03-07T12:29:42 BDT" name="signIn" finished-at="2020-03-07T12:29:50 BDT" duration-ms="7073" status="PASS">
+        </test-method> <!-- invokeBrowser -->
+        <test-method signature="Test()[pri:0, instance:com.java.testing.youtube.TestProject@76ed1b7c]" started-at="2020-03-12T20:49:17 BDT" name="Test" finished-at="2020-03-12T20:49:38 BDT" duration-ms="20262" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="userSearch()[pri:0, instance:testNG.HRM@672872e1]" started-at="2020-03-07T12:29:50 BDT" name="userSearch" finished-at="2020-03-07T12:29:54 BDT" duration-ms="4320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userSearch -->
-        <test-method is-config="true" signature="userSignOut()[pri:0, instance:testNG.HRM@672872e1]" started-at="2020-03-07T12:29:54 BDT" name="userSignOut" finished-at="2020-03-07T12:29:55 BDT" duration-ms="999" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userSignOut -->
-        <test-method signature="Logout()[pri:0, instance:testNG.HRM@672872e1]" started-at="2020-03-07T12:29:55 BDT" name="Logout" finished-at="2020-03-07T12:29:57 BDT" duration-ms="2115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNG.HRM@672872e1]" started-at="2020-03-07T12:29:57 BDT" name="tearDown" finished-at="2020-03-07T12:29:59 BDT" duration-ms="1470" status="PASS">
+        </test-method> <!-- Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.testing.youtube.TestProject@76ed1b7c]" started-at="2020-03-12T20:49:38 BDT" name="tearDown" finished-at="2020-03-12T20:49:38 BDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testNG.HRM -->
+      </class> <!-- com.java.testing.youtube.TestProject -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
