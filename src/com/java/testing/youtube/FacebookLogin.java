@@ -21,7 +21,7 @@ public class FacebookLogin {
 		
 	 
 			try {
-				System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","C:\\c\\chromedriver.exe");
 				driver = new ChromeDriver();
 				
 				// manage use for browser property

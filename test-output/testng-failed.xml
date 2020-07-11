@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.java.testing.youtube.TestProject">
+      <class name="testNG.FbLoginTest">
         <methods>
+          <include name="init"/>
+          <include name="initialize"/>
           <include name="tearDown"/>
-          <include name="invokeBrowser"/>
-          <include name="Test"/>
         </methods>
-      </class> <!-- com.java.testing.youtube.TestProject -->
+      </class> <!-- testNG.FbLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

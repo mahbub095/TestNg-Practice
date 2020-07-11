@@ -27,13 +27,13 @@ public class TestProject {
 		
 	
 			try {
-				System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","C:\\c\\chromedriver.exe");
 				driver = new ChromeDriver();
 				driver.manage().deleteAllCookies();
 				driver.manage().window().maximize();
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-				//driver.get("http://t-nation.webpublisherpro.com/wp-admin");
+			//	driver.get("http://t-nation.webpublisherpro.com/wp-admin");
 				driver.get("http://t-nation.webpublisherpro.com");
 				Pattern userID = new Pattern("E:\\Automation\\username.PNG");
 				Pattern password = new Pattern("E:\\Automation\\password.PNG");
@@ -41,8 +41,8 @@ public class TestProject {
 		
 				myScreen = new Screen();
 				//myScreen.wait(userID,3);
-				myScreen.type(userID, "abc");
-				myScreen.type(password,"abc");
+				myScreen.type(userID, "wpp");
+				myScreen.type(password,"wpp");
 				myScreen.click(loginnButton);
 				
 //				WebElement productlist = driver.findElement(By.id("#"));  

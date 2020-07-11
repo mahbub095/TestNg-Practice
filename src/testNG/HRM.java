@@ -21,7 +21,7 @@ WebDriver driver;
 @BeforeSuite
 	public void setUp ()
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:\\c\\chromedriver.exe");
 		driver = new ChromeDriver ();
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
