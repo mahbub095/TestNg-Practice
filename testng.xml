@@ -3,12 +3,22 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.java.testing.youtube.TestNgBasics"/>
+      <class name="com.java.testing.youtube.infintLoopTest"/>
+      <class name="testNG.Ajkerdeal"/>
       <class name="com.java.testing.youtube.understandtestng"/>
-      <class name="Ajkerdeasl"/>
+      <class name="testNG.HRM"/>
+      <class name="testNG.NegativeTests"/>
+      <class name="testNG.FbLoginTest"/>
+      <class name="testNG.TestAnnotations"/>
       <class name="testNG.TestBase"/>
-      <class name="com.datadriven.test"/>
-      <class name="testNG"/>
+      <class name="com.java.testing.youtube.TestNgBasics"/>
+      <class name="com.java.testing.youtube.TestProject"/>
+      <class name="com.java.testing.youtube.InvocationCountTest"/>
+      <class name="com.java.testing.youtube.GoogleTitleTest"/>
+      <class name="com.java.testing.youtube.GoogleTest"/>
+      <class name="testNG.Configuration_Annotations"/>
+      <class name="com.java.testing.youtube.TestNgFeatures"/>
+      <class name="testNG.Ecommerce"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

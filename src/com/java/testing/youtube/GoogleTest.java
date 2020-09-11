@@ -64,4 +64,9 @@ public class GoogleTest {
 	public void tearDown() {
 		driver.quit();
 	}
+
+	/*
+	 * public static void main(String[] args) { System.out.println("Hello Google");
+	 * GoogleTest obj =new GoogleTest(); }
+	 */
 }

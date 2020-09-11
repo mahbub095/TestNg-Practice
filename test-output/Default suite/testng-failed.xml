@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="param-val-not-found"/>
+  <parameter name="browser" value="&quot;chrome&quot;"/>
+  <parameter name="expectedMessage" value="param-val-not-found"/>
+  <parameter name="username" value="param-val-not-found"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.FbLoginTest">
+      <class name="com.newTest.NegativeTests">
         <methods>
-          <include name="init"/>
-          <include name="initialize"/>
+          <include name="negativeTest" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- testNG.FbLoginTest -->
+      </class> <!-- com.newTest.NegativeTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
